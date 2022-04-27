@@ -29,12 +29,11 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import ShoppingCart from "./components/ShoppingCart.vue";
 import "@fontsource/alike-angular";
 
 @Component({
   components: {
-    ShoppingCart,
+
   },
 })
 export default class App extends Vue {}
