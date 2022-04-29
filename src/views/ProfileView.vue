@@ -1,15 +1,16 @@
 <template>
-  <div class="profile">
+  <div class="products">
       <div class="container">
         <h3>Profile settings</h3>
         <p>Change your profile settings here</p>
     <p>{{userInfo}}</p>
-    <img id="profilepic" :src="userPhotoURL" v-if="userPhotoURL.length > 0" width="64">
-    <br>
-      </div>
-    <button id="logout" @click="outtahere">Logout</button>
+    <img :src="userPhotoURL" v-if="userPhotoURL.length > 0" width="64">
+    <div id="DeleteUser">
+      <button @click="deleteAcc">Delete Account</button>
+    </div>
+    <button @click="outtahere">Logout</button>
     <world-time-export></world-time-export>
-      
+      </div>
   </div>
 </template>
 
@@ -29,7 +30,7 @@ import {
     WorldTimeExport,
   },
 })
-export default class ProfileView extends Vue {
+export default class HomeView extends Vue {
   @Prop() readonly byWayOf!: string;
   userPhotoURL = "";
   auth: Auth | null = null;
@@ -69,18 +70,3 @@ deleteAcc(): void {
   }
 }
 </script>
-
-<style scoped>
-
-img {
- height: 50% !important;
- width: 10%;
-align-content: center;
-}
-
-#logout {
-  font-size: 25px;
-  float: right;
-  position: relative;
-}
-</style>

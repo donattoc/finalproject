@@ -8,6 +8,7 @@ import firebaseConfig  from "./myconfig";
 
 
 
+
 Vue.config.productionTip = false;
 new Vue({
   router,
