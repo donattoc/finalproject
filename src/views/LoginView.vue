@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1> Welcome To The Silk Road, Let's Get Logged In!</h1>
     <section>
       <div id="loginpanel">
         <input type="text" v-model="u_email"
@@ -156,10 +157,13 @@ export default class LoginView extends Vue {
   border: 1px solid black;
   padding: 0.5em;
   border-radius: 0.5em;
+  font-size: 30px;
 }
 
-section {
+section, h1 {
   margin-bottom: 1em;
+  text-align: center;
+  padding: 5px;
 }
 #msgbox {
   font-size: 80%;
@@ -179,10 +183,14 @@ section {
 input {
   margin: 0.25em;
   align-self: stretch;
+    font-size: 25px;
+
 }
 
 button {
   margin-right: 0.25em;
+    font-size: 25px;
+
 }
 label {
   font-size: 80%;
