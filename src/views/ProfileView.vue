@@ -3,7 +3,7 @@
       <div class="container">
         <h3>Profile settings</h3>
         <p>Change your profile settings here</p>
-    <p>Welcome, {{userInfo}}</p>
+    <p>{{userInfo}}</p>
     <img id="profilepic" :src="userPhotoURL" v-if="userPhotoURL.length > 0" width="64">
     <br>
       </div>
@@ -79,17 +79,8 @@ align-content: center;
 }
 
 #logout {
-  font-size: 50px;
-    margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.container {
-  text-align: center;
-  font-size: larger;
+  font-size: 25px;
+  float: right;
+  position: relative;
 }
 </style>
