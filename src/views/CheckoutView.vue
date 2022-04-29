@@ -18,3 +18,7 @@ import ShoppingCart from "@/components/ShoppingCart.vue";
 })
 export default class CheckOut extends Vue {}
 </script>
+
+<style scoped>
+
+</style>

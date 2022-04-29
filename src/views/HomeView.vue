@@ -55,7 +55,8 @@ export default class HomeView extends Vue {
 
 </script>
 
-<style>
+<style scoped>
+
 img {
   height: 500px !important;
   

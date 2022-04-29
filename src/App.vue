@@ -24,7 +24,6 @@
     </transition>
   </div>
   
-
 </template>
 
 <script lang="ts">
@@ -44,6 +43,8 @@ export default class App extends Vue {}
 #app {
   font-family: 'Alike Angular', 'Times New Roman', 'Arial';
   padding-top: 50px;
+  display: block !important;
+  width: 100% !important;
 
 }
 
@@ -81,7 +82,7 @@ export default class App extends Vue {}
 .shrink-explode-enter-to {
   /* transform: scale(100%); */
 }
-#navbar2 {
+nav {
   width: 100%;
  background: #9597DB;
     background: linear-gradient(to bottom,  #A095CC,  #6588DB);
@@ -90,7 +91,7 @@ export default class App extends Vue {}
   padding-left: 10px;
     border-radius: 0px;
   position: fixed;
-  display: inline-flex;
+  display: -webkit-inline-box;
   text-align: center;
   z-index: 200;
  left: 0;
@@ -110,7 +111,10 @@ export default class App extends Vue {}
 a#brand {
   padding-top: 10px;
   font-size: 30px;
-  padding-right: 650px;
   display: flex;
+  padding-right: 10% !important;
 }
+
+  
+
 </style>
