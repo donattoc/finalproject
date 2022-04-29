@@ -12,12 +12,9 @@
       <router-link to="/shop">Shop</router-link> </ul> 
       <ul class="nav-item">
 
-      <router-link to="/checkout">Checkout</router-link> </ul>
-       <ul class="nav-item">
-
       <router-link to="/profile">Profile</router-link> </ul>
      </nav>
-     
+
 
     <transition name="shrink-explode">
 <router-view class="view one"></router-view>
@@ -32,6 +29,7 @@ import { Component, Vue } from "vue-property-decorator";
 @Component({
   components: {
 
+
   },
 })
 export default class App extends Vue {}
@@ -42,25 +40,14 @@ export default class App extends Vue {}
 <style>
 #app {
   font-family: 'Alike Angular', 'Times New Roman', 'Arial';
-  padding-top: 50px;
+  padding-top: 40px;
   display: block !important;
   width: 100% !important;
 
 }
 
-#nav {
-  padding: 30px;
-  text-align: center;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
+#navbar2 a.router-link-exact-active {
   color: whitesmoke;
-  background: crimson;
   border-radius: .5rem;
 }
 .shrink-explode-leave-active,
@@ -101,20 +88,19 @@ nav {
 #navbar2 a {
     display: flex;
     line-height: 20px;
-    padding: 0 50px;
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
+    width: 25%;
+    padding-right: 25px;
+
 }
-
-
 a#brand {
   padding-top: 10px;
   font-size: 30px;
   display: flex;
-  padding-right: 10% !important;
+     line-height: 20px;
+   width: 75%;
+
 }
-
-  
-
 </style>

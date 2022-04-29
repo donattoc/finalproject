@@ -13,18 +13,15 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import WorldTimeExport from "vue-class-component";
 import {
   getAuth,
   onAuthStateChanged,
   User,
-  Auth,
-  signOut,
-  deleteUser,
+  Auth
 } from "firebase/auth";
 @Component({
   components: {
-    WorldTimeExport,
+
   },
 })
 export default class HomeView extends Vue {

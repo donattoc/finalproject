@@ -3,8 +3,10 @@ import VueRouter, { RouteConfig } from "vue-router";
 // import HomeView from "../views/HomeView.vue";
 import LoginView from "../views/LoginView.vue";
 import HomeView from "../views/HomeView.vue";
+// import ProductsList from "../components/ProductsList.vue";
 import ShopView from "../views/ShopView.vue";
-import CheckoutView from "../views/CheckoutView.vue";
+//import CheckoutView from "../views/CheckoutView.vue";
+//import ShoppingCart from "../components/ShoppingCart.vue";
 import Profile from "../views/ProfileView.vue";
 Vue.use(VueRouter);
 
@@ -26,14 +28,14 @@ const routes: Array<RouteConfig> = [
       path: '/shop',
       name: "shop",
       component: 
-      ShopView,
+      ShopView
       },
-  {
+/*   {
     path: '/checkout',
     name: "checkout",
     component:
     CheckoutView
-  },
+  }, */
   {
     path: '/profile',
     name: "profile",

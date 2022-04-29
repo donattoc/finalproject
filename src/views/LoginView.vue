@@ -44,7 +44,6 @@ import {
   GithubAuthProvider,
   sendEmailVerification,
   signOut,
-  signInWithRedirect,
   sendPasswordResetEmail,
 } from "firebase/auth";
 import router from "../router/index";
