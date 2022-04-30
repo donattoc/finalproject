@@ -21,14 +21,17 @@
     </transition>
   </div>
   
+
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import ShoppingCart from "./components/ShoppingCart.vue";
+//import "@fontsource/alike-angular";
 
 @Component({
   components: {
-
+    ShoppingCart,
   },
 })
 export default class App extends Vue {}
@@ -40,8 +43,6 @@ export default class App extends Vue {}
 #app {
   font-family: 'Alike Angular', 'Times New Roman', 'Arial';
   padding-top: 50px;
-  display: block !important;
-  width: 100% !important;
 
 }
 
@@ -79,7 +80,7 @@ export default class App extends Vue {}
 .shrink-explode-enter-to {
   /* transform: scale(100%); */
 }
-nav {
+#navbar2 {
   width: 100%;
  background: #9597DB;
     background: linear-gradient(to bottom,  #A095CC,  #6588DB);
@@ -88,7 +89,7 @@ nav {
   padding-left: 10px;
     border-radius: 0px;
   position: fixed;
-  display: -webkit-inline-box;
+  display: inline-flex;
   text-align: center;
   z-index: 200;
  left: 0;
@@ -109,11 +110,9 @@ nav {
 a#brand {
   padding-top: 10px;
   font-size: 30px;
+  padding-right: 650px;
   display: flex;
   padding-right: 10% !important;
   width: 40% !important;
 }
-
-  
-
 </style>
