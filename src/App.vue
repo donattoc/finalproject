@@ -12,9 +12,6 @@
       <router-link to="/shop">Shop</router-link> </ul> 
       <ul class="nav-item">
 
-      <router-link to="/checkout">Checkout</router-link> </ul>
-       <ul class="nav-item">
-
       <router-link to="/profile">Profile</router-link> </ul>
      </nav>
      
@@ -105,6 +102,7 @@ nav {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
+    width: 15% !important;
 }
 
 
@@ -113,6 +111,7 @@ a#brand {
   font-size: 30px;
   display: flex;
   padding-right: 10% !important;
+  width: 40% !important;
 }
 
   

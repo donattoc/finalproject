@@ -1,6 +1,7 @@
 <template>
+<div id="firsttext">
+  <h2 id="enter"> Welcome, go ahead and sign in! </h2>
   <div>
-    <h1> Welcome To The Silk Road, Let's Get Logged In!</h1>
     <section>
       <div id="loginpanel">
         <input type="text" v-model="u_email"
@@ -26,7 +27,7 @@
       </div>
     </section>
     <span id="msgbox" v-show="message.length > 0">{{message}}</span>
-
+  </div>
   </div>
 </template>
 
@@ -194,5 +195,9 @@ button {
 }
 label {
   font-size: 80%;
+}
+
+#enter {
+  text-align: center;
 }
 </style>

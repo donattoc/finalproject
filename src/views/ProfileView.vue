@@ -29,7 +29,7 @@ import {
     WorldTimeExport,
   },
 })
-export default class ProfileView extends Vue {
+export default class HomeView extends Vue {
   @Prop() readonly byWayOf!: string;
   userPhotoURL = "";
   auth: Auth | null = null;
@@ -69,7 +69,6 @@ deleteAcc(): void {
   }
 }
 </script>
-
 <style scoped>
 
 img {

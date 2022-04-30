@@ -28,7 +28,6 @@ import {
   },
 })
 export default class HomeView extends Vue {
-
   @Prop() readonly byWayOf!: string;
   userPhotoURL = "";
   auth: Auth | null = null;
@@ -51,8 +50,6 @@ export default class HomeView extends Vue {
   }
 }
 }
-
-
 </script>
 
 <style scoped>

@@ -4,6 +4,7 @@ import VueRouter, { RouteConfig } from "vue-router";
 import LoginView from "../views/LoginView.vue";
 import HomeView from "../views/HomeView.vue";
 import ShopView from "../views/ShopView.vue";
+import SellView from "../views/SellView.vue";
 import CheckoutView from "../views/CheckoutView.vue";
 import Profile from "../views/ProfileView.vue";
 Vue.use(VueRouter);
@@ -28,6 +29,12 @@ const routes: Array<RouteConfig> = [
       component: 
       ShopView,
       },
+      {
+      path: '/sell',
+      name: "sell",
+      component: 
+  SellView
+  },
   {
     path: '/checkout',
     name: "checkout",
