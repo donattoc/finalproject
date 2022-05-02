@@ -13,7 +13,6 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import WorldTimeExport from "vue-class-component";
 import {
   getAuth,
   onAuthStateChanged,
@@ -22,11 +21,7 @@ import {
   signOut,
   deleteUser,
 } from "firebase/auth";
-@Component({
-  components: {
-    WorldTimeExport,
-  },
-})
+
 export default class HomeView extends Vue {
   @Prop() readonly byWayOf!: string;
   userPhotoURL = "";
@@ -52,7 +47,8 @@ export default class HomeView extends Vue {
 }
 </script>
 
-<style>
+<style scoped>
+
 img {
   height: 500px !important;
   

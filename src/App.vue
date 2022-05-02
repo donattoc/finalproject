@@ -21,22 +21,18 @@
     </transition>
   </div>
   
-
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import ShoppingCart from "./components/ShoppingCart.vue";
-//import "@fontsource/alike-angular";
 
 @Component({
   components: {
-    ShoppingCart,
+
   },
 })
 export default class App extends Vue {}
 </script>
-
 
 
 <style>
@@ -89,7 +85,7 @@ export default class App extends Vue {}
   padding-left: 10px;
     border-radius: 0px;
   position: fixed;
-  display: inline-flex;
+  display: flex !important;
   text-align: center;
   z-index: 200;
  left: 0;
@@ -97,22 +93,18 @@ export default class App extends Vue {}
  
 }
 #navbar2 a {
-    display: flex;
     line-height: 20px;
     padding: 0 50px;
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
-    width: 15% !important;
 }
 
 
 a#brand {
   padding-top: 10px;
-  font-size: 30px;
-  padding-right: 650px;
-  display: flex;
-  padding-right: 10% !important;
-  width: 40% !important;
+  font-size: 25px;
+  padding-right: 2% !important;
+  width: 30% !important;
 }
 </style>
